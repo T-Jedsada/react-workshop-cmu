@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ToggleView from './ToggleView'
 import List from './List'
+import Field from './Field'
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
            "Banana",
            "Kiwi"
         ]}/>
+        <Field/>
       </div>
     );
   }
