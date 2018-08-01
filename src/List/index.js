@@ -5,8 +5,8 @@ function List({items}) {
     return(
         <div>
             { 
-                items.map((value) => {
-                    return (<Item value={value}/>)
+                items.map((value, index) => {
+                    return (<Item value={value} key={index}/>)
                 })
             }
         </div>
