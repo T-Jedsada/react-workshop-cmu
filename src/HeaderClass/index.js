@@ -7,9 +7,17 @@ class Header extends Component {
         des: ""
     }
 
+    componentDidMount() {
+        console.log("component create")
+    }
+
+    componentDidUpdate() {
+        console.log("component update")
+    }
+
     onChangeHeader = () => {
         this.setState({
-            name: "20Scoops"
+            name: "Chiang Mai"
         })
     }
 

@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
-
-import Header from './Header'
+import React, { Component } from 'react'
 import HeaderClass from './HeaderClass'
+import ToggleView from './ToggleView'
 
 class App extends Component {
+
   render() {
+
+    const props = {
+      name: "20scoops CNX"
+    }
+
     return (
       <div style = {{margin:10}}>
-        <Header name="20scoops CNX"/>
-        <Header name="Workshop CMU"/>
-        <HeaderClass name=""/>
+        <ToggleView/>
       </div>
     );
   }
