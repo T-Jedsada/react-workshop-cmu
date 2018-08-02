@@ -1,7 +1,7 @@
 import React from 'react'
 
-function AboutMe() {
-    return <p>About Me</p>
+function AboutMe( {match} ) {
+    return <p>About { match.params.name }</p>
 }
 
 export default AboutMe

@@ -7,7 +7,7 @@ function Routes() {
     return (
         <div>
             <Route exact path='/home' component={Home}/>
-            <Route exact path='/about-me' component={AboutMe}/>
+            <Route exact path='/about-me/:name' component={AboutMe}/>
         </div>
     )
 }
