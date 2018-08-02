@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Route from './Route'
-import Menu from './components/Menu'
+import Route from './scenes/Route'
+import Header from './components/Header'
 
 class App extends Component {
 
   render() {
     return (
       <div>
-        <Menu/>
+        <Header/>
         <Route/>
       </div>
     );
