@@ -13,6 +13,7 @@ class LoginContainer extends Component {
         const { history } = this.props
         if (this.state.isValid) {
             history.push('/movies')
+            this.props.setUsername(this.state.username)
         }
     }
 

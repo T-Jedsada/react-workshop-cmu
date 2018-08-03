@@ -9,11 +9,17 @@ class App extends Component {
     username: ""
   }
 
+  setUsername = username => {
+      this.setState({
+        username: username
+      })
+  }
+
   render() {
     return (
       <div>
         <Header name={this.state.username}/>
-        <Route/>
+        <Route setUsername = {this.setUsername}/>
       </div>
     );
   }

@@ -1,8 +1,8 @@
 import React from 'react'
 import LoginContainer from './containers/Login'
 
-function Login() {
-    return <LoginContainer/>
+function Login({setUsername}) {
+    return <LoginContainer setUsername={setUsername}/>
 }
 
 export default Login
