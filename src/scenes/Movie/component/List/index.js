@@ -8,7 +8,9 @@ function List(props) {
         <div className='movie-list'>
             { props.items.map(item => {
                 return (
-                    <div className='movie-list-item'><Card item={item}/></div>
+                    <div className='movie-list-item' onClick={ () => props.onNavigateToDetail(item.id)}>
+                        <Card item={item}/>
+                    </div>
                 )
             }) }
         </div>

@@ -1,8 +1,13 @@
 import React from 'react'
 import ListMovieContainer from './containers/List'
+import DetailMovieContainer from './containers/Detail'
 
-function Movie() {
+function ListMovie() {
     return <ListMovieContainer/>
 }
 
-export default Movie
+function DetailMovie() {
+    return <DetailMovieContainer/>
+}
+
+export {ListMovie, DetailMovie}
