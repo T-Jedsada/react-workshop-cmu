@@ -3,6 +3,7 @@
     justify-content: center;
     text-align: center;
     padding-top: 16px;
+    flex-wrap: wrap;
 }
 
 .movie-list .movie-list-item {

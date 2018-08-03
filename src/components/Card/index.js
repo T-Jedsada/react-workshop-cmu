@@ -4,14 +4,15 @@ import Rating from '../Rating'
 import Paper from '../Paper'
 
 function Card(props) {
+    let item = props.item
     return (
         <Paper type="card">
             <div className='card'>
-                <p className='title'>{props.item.name}</p>
-                <p className='subtitle'>{props.item.released}</p>
-                <div className='img_container'> <img src={props.item.image}/></div>
+                <p className='title'>{item.name}</p>
+                <p className='subtitle'>{item.released}</p>
+                <div className='img_container'> <img src={item.image}/></div>
                 <div className='rating_container'>
-                    <Rating rate={props.item.rated}/>
+                    <Rating rate={item.rated}/>
                 </div>
             </div>
         </Paper>
